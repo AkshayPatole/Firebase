@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pro/constants/app_colors.dart';
 import 'package:pro/constants/app_enum.dart';
+import 'package:pro/presentation/forget_password.dart';
 import 'package:pro/presentation/home_screen.dart';
 import 'package:pro/presentation/sign_up_screen.dart';
 import 'package:pro/widgets/alert_box.dart';
@@ -90,6 +91,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ],
               ),
+             
+              
+
               SizedBoxWidget(height: 10),
               ButtonWidget(
                 width: 250,
@@ -100,6 +104,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 text: "Login",
                 textColor: Colors.white,
               ),
+               SizedBoxWidget(height: 20),
+              InkWell(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ForgetPassWordScreen()));
+                },
+                child: TextWidget(text: "forget Password",fontSize: 13,color: AppColors.blueColor,)),
             ],
           ),
         ),
