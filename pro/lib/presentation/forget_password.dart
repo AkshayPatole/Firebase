@@ -46,7 +46,7 @@ class _ForgetPassWordScreenState extends State<ForgetPassWordScreen> {
                 text: "Reseat Password",
                 fontSize: 13.sp,
                 textColor: AppColors.whiteColor,
-              )
+              ),
             ],
           ),
         ),

@@ -77,11 +77,14 @@ class _LoginScreenState extends State<LoginScreen> {
                   SizedBoxWidget(width: 7),
                   InkWell(
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(
-                        builder: (context) {
-                          return SignUpScreen();
-                        },
-                      ));
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return SignUpScreen();
+                          },
+                        ),
+                      );
                     },
                     child: TextWidget(
                       text: "Sign Up",
@@ -91,9 +94,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ],
               ),
-             
-              
-
               SizedBoxWidget(height: 10),
               ButtonWidget(
                 width: 250,
@@ -104,12 +104,19 @@ class _LoginScreenState extends State<LoginScreen> {
                 text: "Login",
                 textColor: Colors.white,
               ),
-               SizedBoxWidget(height: 20),
+              SizedBoxWidget(height: 20),
               InkWell(
-                onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ForgetPassWordScreen()));
-                },
-                child: TextWidget(text: "forget Password",fontSize: 13,color: AppColors.blueColor,)),
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ForgetPassWordScreen()));
+                  },
+                  child: TextWidget(
+                    text: "forget Password",
+                    fontSize: 13,
+                    color: AppColors.blueColor,
+                  )),
             ],
           ),
         ),

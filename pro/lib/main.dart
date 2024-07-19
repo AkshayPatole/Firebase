@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pro/firebase_options.dart';
 import 'package:pro/presentation/check_user_screen.dart';
+import 'package:pro/presentation/phone_auth.dart';
+import 'package:pro/presentation/show_data.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,9 +27,10 @@ class _MyAppState extends State<MyApp> {
       splitScreenMode: true,
       designSize: const Size(360, 740),
       builder: (context, child) {
-        return const MaterialApp(
-          home: CheckUser(),
-        );
+        return const MaterialApp(home: ShowDataScreen()
+            // PhoneAuthScreen()
+            // CheckUser(),
+            );
       },
     );
   }
